@@ -1,0 +1,16 @@
+body{
+    background-image: url("/pexels-vh-s-2377965.jpg");
+    
+    font-family: Raleway;
+}
+
+#main-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-table{
+    background: rgba(255,255,255,0.5);
+    font-size: 30px;
+}

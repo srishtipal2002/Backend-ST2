@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../PageCss/AdminCss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+    <title>Admin Panel</title>
+</head>
+<body>
+    <h2 style="text-align: center; font-size: 50px;">Admin Panel</h2>
+    <div id="main-div">
+    <table id="main-table" border="2">
+        <tr>
+            <th>Username</th>
+            <th>Password</th>
+            <th>Father Name</th>
+            <th>Phone Number</th>
+            <th>Gender</th>
+            
+        </tr>
+        <% for(var i=0; i<result.length; i++) { %>
+            <tr>
+                <td><%= result[i].Name %></td>
+                <td><%= result[i].Password %></td>
+                <td><%= result[i].FName %></td>
+                <td><%= result[i].PhNo %></td>
+                <td><%= result[i].Gender %></td>
+                
+            </tr>
+        <% } %> 
+    </table>
+    </div>
+    <!-- <h1>This is Admin Page</h1> -->
+</body>
+</html>
